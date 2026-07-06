@@ -281,23 +281,20 @@ AI-Memory-Agents
 ├── shopping-assistant-stm/
 │   ├── README.md
 │   ├── workflow.json
-│   ├── architecture.png
 │   ├── workflow.png
-│   └── demo.gif
+│
 │
 ├── learning-path-generator-stm/
 │   ├── README.md
 │   ├── workflow.json
-│   ├── architecture.png
 │   ├── workflow.png
-│   └── demo.gif
+│   
 │
 ├── multi-tool-agent-stm/
 │   ├── README.md
 │   ├── workflow.json
-│   ├── architecture.png
 │   ├── workflow.png
-│   └── demo.gif
+│   
 │
 └── docs/
 ```
