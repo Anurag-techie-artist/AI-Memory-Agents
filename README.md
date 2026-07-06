@@ -1,11 +1,13 @@
 <p align="center">
-  <img src="assets/banner.png" alt="AI Memory Agents Banner" width="100%">
+  <img src="assets/banner.png" width="100%">
 </p>
 
-<h1 align="center">🧠 AI Memory Agents</h1>
+<h1 align="center">
+🧠 AI Memory Agents
+</h1>
 
 <p align="center">
-Building AI systems that remember, adapt, and personalize every conversation.
+Transforming Stateless AI Agents into Context-Aware Intelligent Systems using Short-Term Memory.
 </p>
 
 <p align="center">
@@ -13,7 +15,7 @@ Building AI systems that remember, adapt, and personalize every conversation.
 ![Built with n8n](https://img.shields.io/badge/Built%20With-n8n-FF6D5A?style=for-the-badge)
 ![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge)
 ![Redis](https://img.shields.io/badge/Redis-Upstash-red?style=for-the-badge)
-![AI Agents](https://img.shields.io/badge/AI-Memory%20Agents-success?style=for-the-badge)
+![AI Memory](https://img.shields.io/badge/Memory-Short--Term-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 </p>
@@ -22,58 +24,147 @@ Building AI systems that remember, adapt, and personalize every conversation.
 
 # 🚀 Overview
 
-Modern AI systems are expected to do more than answer questions.
+This repository represents **Phase 2** of my AI engineering journey.
 
-They should remember previous conversations, understand user preferences, maintain context across interactions, and deliver personalized experiences instead of treating every conversation as a completely new session.
+After developing a collection of production-ready AI agents capable of tool calling, workflow automation, and intelligent reasoning, I wanted to solve one major limitation shared by most AI assistants:
 
-This repository explores the development of **memory-enabled AI agents** using **Large Language Models**, **Redis-based conversational memory**, **workflow automation**, and **external tools**.
+> They forget everything after every conversation.
 
-Each project demonstrates how memory transforms a traditional AI chatbot into an intelligent assistant capable of maintaining context and making better decisions over time.
+To overcome this, I enhanced my existing AI agents with **Short-Term Memory (STM)** using **Redis (Upstash)**.
 
-Whether it's shopping, research, learning, or productivity, these agents are designed to behave more like persistent digital assistants than stateless chatbots.
+These upgraded agents can now maintain conversational context, remember previous interactions within a session, understand user preferences, and generate more personalized responses.
+
+Rather than creating entirely new projects, this repository demonstrates how existing AI systems can be transformed into **memory-aware conversational agents** through the integration of persistent context management.
+
+---
+
+# 🔗 Repository Relationship
+
+This repository is a direct continuation of my previous work.
+
+### Phase 1
+
+🤖 **AI Agents**
+
+Production-ready AI agents built with n8n, Google Gemini, tool calling, and workflow automation.
+
+➡️ Repository:
+https://github.com/Anurag-techie-artist/ai-agents
+
+↓
+
+### Phase 2 (Current Repository)
+
+🧠 **AI Memory Agents**
+
+The same agents enhanced with Redis-powered Short-Term Memory to create context-aware conversational systems.
+
+---
+
+# 📈 AI Engineering Roadmap
+
+```text
+Traditional Automation
+
+        │
+
+        ▼
+
+AI Workflows
+
+        │
+
+        ▼
+
+AI Agents
+
+        │
+
+        ▼
+
+🧠 AI Memory Agents
+(Current Repository)
+
+        │
+
+        ▼
+
+RAG AI Systems
+
+        │
+
+        ▼
+
+Multi-Agent Systems
+
+        │
+
+        ▼
+
+Autonomous AI Systems
+```
 
 ---
 
 # 🧠 Why Memory Matters
 
-Traditional AI assistants have no memory.
+Traditional AI agents are **stateless**.
 
-Every interaction starts from zero.
+Every new conversation starts from scratch.
 
-That leads to:
+This leads to:
 
-- ❌ Repeated questions
-- ❌ Forgotten preferences
-- ❌ Generic responses
-- ❌ Poor personalization
-- ❌ Limited conversational continuity
+❌ Forgotten conversations
 
-Memory-enabled AI agents overcome these limitations by maintaining conversational context throughout a session.
+❌ Repeated questions
 
-Benefits include:
+❌ Generic recommendations
 
-- ✅ Context-aware conversations
-- ✅ Personalized recommendations
-- ✅ Preference retention
-- ✅ Smarter decision making
-- ✅ More natural user interactions
-- ✅ Improved user experience
+❌ No personalization
+
+❌ Poor user experience
+
+Adding Short-Term Memory allows AI agents to:
+
+✅ Remember conversation history
+
+✅ Understand user preferences
+
+✅ Maintain conversational context
+
+✅ Generate personalized responses
+
+✅ Reduce repetitive interactions
+
+✅ Deliver more natural conversations
 
 ---
 
-# ✨ Features
+# ✨ What's New?
 
-- 🧠 Short-Term Conversational Memory
-- 🤖 Google Gemini Powered AI
-- ⚡ n8n Workflow Automation
-- 💬 Telegram Integration
-- 🎙️ Voice Processing
-- 🔍 Tool Calling
-- 🌐 External API Integration
-- 📄 Intelligent Document Generation
-- 🛒 Personalized Shopping Assistance
-- 🔄 Context-Aware Conversations
-- 🚀 Production-Ready Workflow Design
+Every workflow in this repository is an enhanced version of an existing AI agent.
+
+The major improvement is the addition of a **Redis-based Short-Term Memory layer**.
+
+New capabilities include:
+
+- 🧠 Session Memory
+- 💬 Context Awareness
+- 🤖 Personalized Responses
+- ⚡ Conversation History
+- 🔄 Stateful Interactions
+- 🎯 Better User Experience
+- 🚀 Improved AI Decision Making
+
+---
+
+# 🔄 Agent Evolution
+
+| Original AI Agent | Memory Enhanced Version | Upgrade |
+|-------------------|-------------------------|----------|
+| 🛍️ AI Shopping Assistant | AI Shopping Assistant (STM) | Redis Short-Term Memory |
+| 📚 Learning Path Generator | Learning Path Generator (STM) | Context-Aware Planning |
+| 🛠️ AI Multi-Tool Agent | AI Multi-Tool Agent (STM) | Conversation Memory |
 
 ---
 
@@ -84,50 +175,74 @@ Benefits include:
 </p>
 
 ```text
-                 User
+               User
 
-                  │
+                │
 
-                  ▼
+                ▼
 
-          Telegram / Chat Interface
+        Telegram / Chat
 
-                  │
+                │
 
-                  ▼
+                ▼
 
-              AI Agent (LLM)
+          AI Agent (Gemini)
 
-        ┌─────────┴─────────┐
+        ┌────────┴─────────┐
 
-        ▼                   ▼
+        ▼                  ▼
 
- Redis Conversation      External Tools
-       Memory
+Redis Memory         External Tools
 
-        ▼                   ▼
+        ▼                  ▼
 
- Personalized Context-Aware Response
+ Context-Aware Personalized Response
 
-                  │
+                │
 
-                  ▼
+                ▼
 
-                User
+               User
 ```
 
 ---
 
-# 🤖 AI Memory Agent Collection
+# 🤖 Current Memory Agents
 
-| Agent | Description | Memory | Status |
-|-------|-------------|:------:|:------:|
-| 🛍️ AI Shopping Assistant (STM) | Conversational shopping assistant with personalized recommendations | Redis | ✅ |
-| 🔍 AI Research Assistant | Context-aware research companion | Planned | 🚧 |
-| 💻 AI Coding Assistant | Remembers project discussions and coding context | Planned | 🚧 |
-| 📚 AI Learning Coach | Tracks learning progress and adapts study plans | Planned | 🚧 |
-| 📧 Email Assistant | Maintains conversation history while drafting emails | Planned | 🚧 |
-| 🤝 Customer Support Agent | Personalized support with conversation memory | Planned | 🚧 |
+## 🛍️ AI Shopping Assistant (STM)
+
+**Enhancement**
+
+- Conversational Memory
+- User Preference Retention
+- Personalized Shopping
+- Voice + Text Conversations
+- Redis Session Memory
+
+---
+
+## 📚 Learning Path Generator (STM)
+
+**Enhancement**
+
+- Remembers Learning Goals
+- Context-Aware Curriculum Planning
+- Personalized Learning Experience
+- Intelligent Resource Planning
+- Session Memory
+
+---
+
+## 🛠️ AI Multi-Tool Agent (STM)
+
+**Enhancement**
+
+- Maintains Conversation Context
+- Better Tool Selection
+- Personalized Assistance
+- Multi-turn Conversations
+- Redis Memory
 
 ---
 
@@ -137,11 +252,12 @@ Benefits include:
 |-----------|--------------|
 | Workflow Automation | n8n |
 | Large Language Model | Google Gemini |
-| Conversational Memory | Redis (Upstash) |
-| Speech Recognition | Groq Whisper |
-| Messaging Platform | Telegram Bot API |
-| External APIs | HTTP Request, ScraperAPI |
-| Programming Languages | JavaScript, Python |
+| Memory Layer | Redis (Upstash) |
+| Voice Processing | Groq Whisper |
+| Search APIs | SerpAPI |
+| Web Scraping | ScraperAPI |
+| Messaging | Telegram Bot API |
+| Programming | Python, JavaScript |
 
 ---
 
@@ -153,7 +269,6 @@ AI-Memory-Agents
 │
 
 ├── README.md
-
 ├── LICENSE
 
 ├── assets/
@@ -162,109 +277,108 @@ AI-Memory-Agents
 │   └── screenshots/
 
 ├── agents/
-│   ├── AI Shopping Assistant STM/
-│   ├── AI Research Assistant/
-│   ├── AI Coding Assistant/
-│   ├── AI Learning Coach/
-│   └── ...
-
+│
+├── shopping-assistant-stm/
+│   ├── README.md
+│   ├── workflow.json
+│   ├── architecture.png
+│   ├── workflow.png
+│   └── demo.gif
+│
+├── learning-path-generator-stm/
+│   ├── README.md
+│   ├── workflow.json
+│   ├── architecture.png
+│   ├── workflow.png
+│   └── demo.gif
+│
+├── multi-tool-agent-stm/
+│   ├── README.md
+│   ├── workflow.json
+│   ├── architecture.png
+│   ├── workflow.png
+│   └── demo.gif
+│
 └── docs/
 ```
 
 ---
 
-# 📈 Learning Journey
+# 🎯 Repository Goals
 
-This repository documents my progression through modern AI engineering concepts.
+This repository explores practical implementations of:
 
-```text
-Traditional Chatbots
-        │
-        ▼
-Stateless AI Agents
-        │
-        ▼
-Memory-Enabled AI Agents
-        │
-        ▼
-Long-Term Memory Systems
-        │
-        ▼
-Vector Database Memory
-        │
-        ▼
-Retrieval-Augmented Generation (RAG)
-        │
-        ▼
-Multi-Agent Systems
-        │
-        ▼
-Autonomous AI Systems
-```
-
-Each project represents a step toward building more capable, context-aware AI systems.
+- Short-Term Conversational Memory
+- Context-Aware AI Systems
+- Personalized AI Experiences
+- Workflow Orchestration
+- Tool Calling
+- Stateful AI Agents
+- Production AI Engineering
 
 ---
 
-# 🚀 Roadmap
+# 🚀 Future Roadmap
 
 ## ✅ Completed
 
-- AI Shopping Assistant (Short-Term Memory)
+- AI Shopping Assistant (STM)
+
+- Learning Path Generator (STM)
+
+- AI Multi-Tool Agent (STM)
 
 ---
 
-## 🚧 Currently Building
+## 🚧 Coming Soon
 
-- AI Research Assistant
-- AI Coding Assistant
-- AI Learning Coach
+- AI Research Assistant (STM)
 
----
+- AI Coding Assistant (STM)
 
-## 📌 Planned
+- AI Customer Support Agent (STM)
 
-- Personal Finance Agent
-- Resume Review Agent
-- PDF Memory Agent
-- Meeting Assistant
-- Travel Planner
-- Customer Support Agent
-- Email Assistant
-- Medical Information Assistant
-- Multi-Agent Collaboration Framework
+- AI Meeting Assistant (STM)
+
+- AI Email Assistant (STM)
 
 ---
 
-# 💡 Goals of this Repository
+## 🔮 Next Repository
 
-- Build practical memory-enabled AI systems
-- Explore conversational memory architectures
-- Experiment with LLM tool orchestration
-- Develop reusable workflow templates
-- Learn production-ready AI engineering practices
-- Share open-source AI agent implementations
+The next stage of this AI engineering journey focuses on **Long-Term Memory** through Retrieval-Augmented Generation (RAG).
+
+Planned topics include:
+
+- Vector Databases
+- Embeddings
+- Semantic Search
+- Knowledge Retrieval
+- Hybrid Search
+- AI Memory Beyond Sessions
 
 ---
 
 # 🤝 Contributions
 
-Contributions, suggestions, and discussions are always welcome.
+Suggestions, ideas, and improvements are always welcome.
 
-If you have ideas for improving existing agents or building new memory-enabled AI systems, feel free to open an Issue or submit a Pull Request.
+Feel free to fork the repository, open an issue, or submit a pull request.
 
 ---
 
 # 📄 License
 
-This repository is licensed under the MIT License.
+This project is licensed under the MIT License.
 
 ---
 
 <p align="center">
 
-### 🧠 "Intelligence answers questions. Memory builds relationships."
+### "Intelligence answers questions. Memory builds relationships."
 
 Building the next generation of context-aware AI systems.
+
+⭐ If you found this repository useful, consider giving it a star!
 
 </p>
